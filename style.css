@@ -1,0 +1,21 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(23, 19, 59);
+
+}
+
+.container {
+    width: 700px;
+    height: 600px;
+    background-color: #fff;
+
+
+    position: absolute;  
+    left: 50%;
+    top: 50%;                      
+    transform: translate(-50%, -50%)
+}
