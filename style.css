@@ -1,6 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    list-style: none;
 }
 
 body {
@@ -19,3 +20,33 @@ body {
     top: 50%;                      
     transform: translate(-50%, -50%)
 }
+
+.head-title {
+    text-align: center;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.name {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    padding: 5px;
+}
+
+.list_link {
+    display: flex;
+}
+
+
+
+/* характеристика 
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
