@@ -13,6 +13,7 @@ body {
     width: 700px;
     height: 600px;
     background-color: #fff;
+    padding: 20px;
 
 
     position: absolute;  
@@ -24,25 +25,32 @@ body {
 .head-title {
     text-align: center;
     padding: 20px;
-    text-transform: uppercase;
+    
 }
 
 .name {
     text-align: center;
+    text-transform: uppercase;
 }
 
 .form {
+    margin: 20px;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.search {
+.list_link {
+    display: flex;
+    margin: 5px;
+
+    border: 1px solid rgb(0, 0, 0);
     padding: 5px;
 }
 
-.list_link {
-    display: flex;
+.list_link p {
+    padding-left: 10px;
 }
 
 
