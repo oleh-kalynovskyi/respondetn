@@ -9,6 +9,11 @@ click.onclick = function() {
     var idr = document.getElementById('place');
     idr.innerHTML = ('Місто: ' + place[rand]);
 
+    var back = ['Донецьк', 'Луганськ', 'Нема відповіді'];
+    var rand = Math.floor(Math.random() * back.length);
+    var idr = document.getElementById('back');
+    idr.innerHTML = ('Місто: ' + back[rand]);
+
     var family = ['Розлучений/на', 'Одружений/на', 'вдова/вдівець'];
     var rand = Math.floor(Math.random() * family.length);  
     var idr = document.getElementById('family');
@@ -26,9 +31,41 @@ click.onclick = function() {
         var idr = document.getElementById('ege');
         idr.innerHTML = ( 'Вік: ' + randomInteger(23, 80) );
     
-    var back = ['Донецьк', 'Луганськ'];
-    var rand = Math.floor(Math.random() * back.length);
-    var idr = document.getElementById('back'); 
-    idr.innerHTML = ('Попереднє місце: ' + back[rand]);
+    var status = ['Так', 'Ні', 'Не знаю'];
+    var rand = Math.floor(Math.random() * status.length);
+    var idr = document.getElementById('status'); 
+    idr.innerHTML = ('Справка переселенця: ' + status[rand]);
         
+    var job = ['Медицина', 'Державна служба', 'С\г', 'Військова служба', 'Шукаю руботу', 'пенсія'];
+    var rand = Math.floor(Math.random() * job.length);
+    var idr = document.getElementById('job'); 
+    idr.innerHTML = ('Місце роботи: ' + job[rand]);
+
+    var whyChooseThisPlace = ['Близько живуть родичі', 'Випадково'];
+    var rand = Math.floor(Math.random() * whyChooseThisPlace.length);
+    var idr = document.getElementById('whyChooseThisPlace'); 
+    idr.innerHTML = ('Чому вибрали саме це місто/село: ' + whyChooseThisPlace[rand]);
+
+    var backToNGCA = ['Так', 'Ні'];
+    var rand = Math.floor(Math.random() * backToNGCA.length);
+    var idr = document.getElementById('backToNGCA'); 
+    idr.innerHTML = ('Чи повертались на NGCA: ' + backToNGCA[rand]);
+
     }
+
+
+
+// провірка ф-ції (масиву)
+//     click.onclick = function() {
+//         var job = ['Медицина', 'Державна служба', 'С\г', 'Військова служба', 'Шукаю руботу', 'пенсія'];
+//       var rand = Math.floor(Math.random() * job.length);
+//       var idr = document.getElementById('text'); 
+//       idr.innerHTML = ('Місце роботи: ' + job[rand]);
+//         if (rand == 4) {
+//           var res = document.getElementById('alt'); 
+//               res.innerHTML = ('Yes');
+//         } else {
+//             var res = document.getElementById('alt'); 
+//               res.innerHTML = ('No ');
+//         };
+//    } 
