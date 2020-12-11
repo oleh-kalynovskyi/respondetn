@@ -28,7 +28,7 @@ click.onclick = function() {
     
     var back = ['Донецьк', 'Луганськ'];
     var rand = Math.floor(Math.random() * back.length);
-    var idr = document.getElementById('back');
+    var idr = document.getElementById('back'); 
     idr.innerHTML = ('Попереднє місце: ' + back[rand]);
         
     }
