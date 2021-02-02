@@ -1,4 +1,4 @@
-click.onclick = function() {
+$('#click').click(function() {
     var gender = ['Чоловік', 'Жінка'];
     var rand = Math.floor(Math.random() * gender.length);  
     var idr = document.getElementById('gender');
@@ -50,22 +50,4 @@ click.onclick = function() {
     var rand = Math.floor(Math.random() * backToNGCA.length);
     var idr = document.getElementById('backToNGCA'); 
     idr.innerHTML = ('Чи повертались на NGCA: ' + backToNGCA[rand]);
-
-    }
-
-
-
-// провірка ф-ції (масиву)
-//     click.onclick = function() {
-//         var job = ['Медицина', 'Державна служба', 'С\г', 'Військова служба', 'Шукаю руботу', 'пенсія'];
-//       var rand = Math.floor(Math.random() * job.length);
-//       var idr = document.getElementById('text'); 
-//       idr.innerHTML = ('Місце роботи: ' + job[rand]);
-//         if (rand == 4) {
-//           var res = document.getElementById('alt'); 
-//               res.innerHTML = ('Yes');
-//         } else {
-//             var res = document.getElementById('alt'); 
-//               res.innerHTML = ('No ');
-//         };
-//    } 
+});
